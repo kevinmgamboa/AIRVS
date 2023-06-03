@@ -41,5 +41,6 @@ sam.to(device=device)
 predictor = SamPredictor(sam)
 # Predicting image
 predictor.set_image(image)
+
 image_embedding = predictor.get_image_embedding().cpu().numpy()
 print(image_embedding.shape)
